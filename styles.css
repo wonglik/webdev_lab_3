@@ -1,0 +1,246 @@
+/* General page styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #4F6F52;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    border-bottom: 2px solid #739072;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+footer {
+    text-align: center;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+nav a {
+    color: #D2E3C8;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/* Main section layout */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.biodata-content {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 800px;
+}
+
+/* Table styling */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    border-radius: 50px;
+    border: 1px solid black;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+th,
+td {
+    border: 1px solid #739072;
+    padding: 15px;
+    font-size: 14px;
+}
+
+th {
+    text-align: left;
+    background-color: #739072;
+    color: #000000;
+}
+
+td {
+    background-color: #D2E3C8;
+    color: #333;
+    text-align: center;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+/* Image styling */
+.profile-img {
+    width: 400;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.hobby-img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.campus-img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* List styling within table cells */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+/* Hobbies content styling */
+.hobbies-content {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    text-align: justify;
+}
+
+.hobbies-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.hobby-item {
+    background-color: #D2E3C8;
+    color: #000000;
+    padding: 15px 20px;
+    border: 2px solid #739072;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.hobby-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Description styling */
+.hobby-description {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    padding: 20px;
+    border: 1px solid #739072;
+    background-color: #D2E3C8;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+.hobby-description {
+    display: none;
+    /* Initially hide all descriptions */
+}
+
+.hobby-description.active {
+    display: block;
+    /* Show active description */
+}
+
+
+/* Campus content styling */
+.campus-content {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+}
+
+.campus-content p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Campus list with Flexbox */
+.campus-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Campus item cards */
+.campus-item {
+    background-color: #D2E3C8;
+    padding: 20px;
+    border: 2px solid #739072;
+    border-radius: 12px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.campus-item h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.campus-item p {
+    font-size: 16px;
+    color: #000000;
+    text-align: justify;
+}
+
+.campus-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}

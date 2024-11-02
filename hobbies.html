@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>My Hobbies</h1>
+        <nav>
+            <a href="index.html">Biodata</a> |
+            <a href="hobbies.html">Hobbies</a> |
+            <a href="campuslife.html">Campus Life</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hobbies-content">
+            <div class="hobbies-list">
+                <button class="hobby-item" onmouseover="showDescription('osint')"
+                    onmouseout="hideDescription()">OSINT</button>
+                <button class="hobby-item" onmouseover="showDescription('music')"
+                    onmouseout="hideDescription()">Music</button>
+                <button class="hobby-item" onmouseover="showDescription('food')"
+                    onmouseout="hideDescription()">Food</button>
+            </div>
+            <!-- Hobby Descriptions -->
+            <div id="osint" class="hobby-description">
+                <h2>Exploring the World Through Open Source Intelligence (OSINT)</h2>
+                <p>Open Source Intelligence (OSINT) is more than just a hobby; it’s a fascinating world of discovery.
+                    With OSINT,
+                    I engage in gathering and analyzing publicly available information to gain insights into various
+                    topics,
+                    from global events to regional conflicts. It sharpens my analytical skills, allowing me to uncover
+                    valuable
+                    data that helps me stay informed and develop a nuanced understanding of complex issues. OSINT also
+                    builds a
+                    mindset of curiosity and responsibility, as it teaches the importance of ethical data usage and
+                    critical
+                    thinking in today’s data-driven landscape.</p>
+                <img class="hobby-img" src="image/osint.jpg" alt="Osint" width="400" height="300">
+            </div>
+            <div id="music" class="hobby-description">
+                <h2>The Universal Language of Music</h2>
+                <p>Music has always been a constant source of joy and inspiration in my life. Whether listening to my
+                    favorite tunes or exploring new genres, music allows me to express emotions and ideas that words
+                    alone can't capture. It connects me with others who share similar tastes, creating bonds over mutual
+                    favorites
+                    or new discoveries. Playing or learning about music also lets me explore my creative side, allowing
+                    me to unwind, recharge, and even enhance my focus. It’s a passion that both relaxes and invigorates,
+                    making life richer and more meaningful.</p>
+                <img class="hobby-img" src="image/music.jpg" alt="Music" width="400" height="300">
+            </div>
+            <div id="food" class="hobby-description">
+                <h2>Savoring Life Through Food Hunting</h2>
+                <p>Food hunting is an adventure that satisfies both my curiosity and taste buds. I love discovering new
+                    restaurants,
+                    hidden cafes, and street food spots to experience diverse flavors and culinary techniques. Each dish
+                    tells a
+                    story of culture, tradition, and innovation, turning every meal into a unique experience. Food
+                    hunting also gives
+                    me the chance to connect with people from various backgrounds, whether by sharing recommendations or
+                    enjoying a
+                    meal together. For me, it's a journey that transforms everyday meals into delightful experiences and
+                    memories worth savoring.</p>
+                <img class="hobby-img" src="image/food.jpg" alt="Food" width="400" height="300">
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+        function showDescription(id) {
+            // Hide all descriptions
+            const descriptions = document.querySelectorAll('.hobby-description');
+            descriptions.forEach(desc => {
+                desc.classList.remove('active');
+            });
+
+            // Show the selected description
+            const selectedDescription = document.getElementById(id);
+            if (selectedDescription) {
+                selectedDescription.classList.add('active');
+            }
+        }
+
+        function hideDescription() {
+            const descriptions = document.querySelectorAll('.hobby-description');
+            descriptions.forEach(desc => {
+                desc.classList.remove('active');
+            });
+        }
+    </script>
+</body>
+<footer>
+    <p>&copy; 2024 Wong Lik</p>
+</footer>
+
+</html>
